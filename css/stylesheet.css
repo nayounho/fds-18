@@ -1,0 +1,75 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url(./fontello.css);
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Spoqa Han Sans','Sans-serif';
+    font-size: 1.4rem;
+    color: #181818;
+    background: #fff;
+    /* display: flex; */
+    
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*스킵 네비게이션*/
+.skip-nav{
+    display: none;
+}
+
+        /* 레이아웃 */
+        .header,.visual,.main,.slogan{
+            width: 940px;
+            margin: 0 auto;
+        }
+.header{ 
+    background-color: yellow;
+}
+.visual{
+    background-color: lime;
+    height: 120px;
+}
+.main{
+    background-color: skyblue;
+    padding: 30px 15px;
+    overflow: hidden;
+    min-height: 450px;
+}
+
+.group{
+    margin: 0 15px;
+    float: left;
+}
+.group1{
+width: 250px;
+background-color: purple;
+float: right;
+}
+.group2{
+    width: 380px;
+    background-color: greenyellow;
+    float: left;
+}
+.group3{
+    width: 190px;
+    background-color: tomato;
+    float: left;
+}
+
+.slogan{
+    background-color: orange;
+}
+.footer{
+    background-color: pink;
+    width: 100%;
+}
