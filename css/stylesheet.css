@@ -1,36 +1,37 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @import url(//necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(./fontello.css);
+
 body *,
 body *::before,
-body *::after{
+body *::after {
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 10px;
 }
 
-body{
-    font-family: 'Spoqa Han Sans','Sans-serif';
+body {
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
     font-size: 1.4rem;
     color: #181818;
     background: #fff;
     /* display: ggflex; */
 }
-.member a{
+
+.member a {
     color: inherit;
     text-decoration: none;
     padding: 6px;
     display: inline-block;
     background-color: pink;
 }
+
 /* 링크 스타일 */
-.skip-nav{
-    display: none;
-}
+
 /*스킵 네비게이션*/
-.skip-nav{
+.skip-nav {
     display: none;
 }
 
@@ -38,67 +39,83 @@ body{
 .header,
 .visual,
 .main,
-.slogan{
+.slogan {
     width: 940px;
     margin: 0 auto;
 }
+
 /* 헤더 */
-.header{ 
+.header {
     background-color: yellow;
     position: relative;
     border-radius: 0 0 15px 15px;
     padding: 0 30px;
 }
+
 /* 로고 */
-.logo{
+.logo {
     position: absolute;
     top: 50px;
     left: 65px;
     margin: 0;
-    
+
 }
+
 /* 안내링크 목록 */
-.member li{
+.member li {
     display: inline-block;
     padding: 2px 0;
 }
-.visual{
+
+.visual {
     background-color: lime;
     height: 120px;
 }
-.member{
+
+.member {
     margin: 0;
     padding-left: 0;
     list-style: none;
     text-align: right;
 }
-.main{
+
+.main {
     background-color: skyblue;
     padding: 30px 15px;
     overflow: hidden;
     min-height: 450px;
 }
 
-.group{
+/* .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+} */
+
+.group {
     margin: 0 15px;
     float: left;
 }
-.group1{
-width: 250px;
-background-color: purple;
+
+.group1 {
+    width: 250px;
+    background-color: purple;
 }
-.group2{
+
+.group2 {
     width: 380px;
     background-color: greenyellow;
 }
-.group3{
+
+.group3 {
     width: 190px;
     background-color: tomato;
 }
 
-.slogan{
+.slogan {
     background: orange;
 }
-.footer{
+
+.footer {
     background-color: pink;
 }
