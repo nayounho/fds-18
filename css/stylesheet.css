@@ -67,7 +67,7 @@ a {
 }
 
 /* 안내링크 목록 */
-.member{
+.member {
     margin: 0;
     padding-left: 0;
     list-style: none;
@@ -79,7 +79,7 @@ a {
     padding: 2px 0;
 }
 
-.member a{
+.member a {
     padding: 6px 0;
     display: inline-block;
 }
@@ -147,14 +147,14 @@ a {
     white-space: nowrap;
 }
 
-.sub-menu li, 
+.sub-menu li,
 .sub-menu a {
     display: inline-block;
 }
 
-.sub-menu a{
-padding: 8px 0;
-margin-right: 10px;
+.sub-menu a {
+    padding: 8px 0;
+    margin-right: 10px;
 }
 
 .sub-menu a::before {
@@ -168,7 +168,7 @@ margin-right: 10px;
 }
 
 .sub-menu a:hover::before,
-.sub-menu a:focus::before{
+.sub-menu a:focus::before {
     content: '\e800';
 }
 
@@ -178,21 +178,49 @@ margin-right: 10px;
 
 .sub-menu1,
 .sub-menu2,
-.sub-menu3{
+.sub-menu3 {
     left: 0;
 }
+
 .sub-menu4,
 .sub-menu5,
-.sub-menu6{
+.sub-menu6 {
     right: 0;
 }
 
+/* 텍스트 및 배경 애니메이션-비주얼 */
+@keyframes textAni {
+    0% {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0);
+        transform: translate(0,0);
+    }
+
+    100% {
+        font-size: 24px;
+        color: rgba(0, 0, 0, 1);
+        transform: translate(400px,75px);
+    }
+}
 
 .visual {
     background-color: lime;
     height: 120px;
+    position: relative;
 }
 
+.visual-text {
+    /* position: absolute;s */
+    width: 500px;
+    font-family: Georgia,
+                 'Times New Roman',
+                   Times, serif;
+    margin: 0;
+    animation-name: textAni;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
+    background-color: blueviolet;
+}   
 
 .main {
     background-color: skyblue;
