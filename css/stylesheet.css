@@ -2,6 +2,17 @@
 @import url(//necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(./fontello.css);
 
+/* 숨긴 제목 및 숨긴 컨텐츠 */
+.a11y-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip-path: polygon(0 0, 0 0, 0 0);
+    /*파란점을 좌표를 이용하여 안보이게 만듬*/
+}
+
 body *,
 body *::before,
 body *::after {
@@ -16,19 +27,14 @@ body {
     font-family: 'Spoqa Han Sans', 'Sans-serif';
     font-size: 1.4rem;
     color: #181818;
-    background: #fff;
-    /* display: ggflex; */
-}
-
-.member a {
-    color: inherit;
-    text-decoration: none;
-    padding: 6px;
-    display: inline-block;
-    background-color: pink;
+    background: #ccc;
 }
 
 /* 링크 스타일 */
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 /*스킵 네비게이션*/
 .skip-nav {
@@ -46,8 +52,8 @@ body {
 
 /* 헤더 */
 .header {
-    background-color: yellow;
     position: relative;
+    background: #fff;
     border-radius: 0 0 15px 15px;
     padding: 0 30px;
 }
@@ -58,26 +64,135 @@ body {
     top: 50px;
     left: 65px;
     margin: 0;
-
 }
 
 /* 안내링크 목록 */
+.member{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    text-align: right;
+}
+
 .member li {
     display: inline-block;
     padding: 2px 0;
 }
+
+.member a{
+    padding: 6px 0;
+    display: inline-block;
+}
+
+/* navigation */
+
+.navigation {
+    padding-bottom: 35px;
+}
+
+.menu {
+    background: linear-gradient(to bottom,
+            #e8852e 0%,
+            #ed552f 35%,
+            #ed552f 70%,
+            #e8852e 100%);
+    border-top: 2px solid currentColor;
+    margin: 10px 0 0 0;
+    padding-left: 0;
+    list-style: none;
+    height: 47px;
+    border-radius: 0 0 5px 5px;
+    padding-left: 225px;
+}
+
+.menu-item {
+    position: relative;
+    float: left;
+}
+
+.menu-button {
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 700;
+    background: transparent;
+    line-height: 45px;
+    display: block;
+    padding: 0 20px;
+    border: 0;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+
+.menu-act .menu-button {
+    color: #ff0;
+
+}
+
+
+.menu-act .menu-button::after {
+    content: "";
+    background-color: blueviolet;
+    display: block;
+    border-top: 2px solid #000;
+}
+
+.sub-menu {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 47px;
+    white-space: nowrap;
+}
+
+.sub-menu li, 
+.sub-menu a {
+    display: inline-block;
+}
+
+.sub-menu a{
+padding: 8px 0;
+margin-right: 10px;
+}
+
+.sub-menu a::before {
+    content: '\f192';
+    font-family: 'fontello';
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+}
+
+.sub-menu a:hover::before,
+.sub-menu a:focus::before{
+    content: '\e800';
+}
+
+.menu-act .sub-menu {
+    display: block;
+}
+
+.sub-menu1,
+.sub-menu2,
+.sub-menu3{
+    left: 0;
+}
+.sub-menu4,
+.sub-menu5,
+.sub-menu6{
+    right: 0;
+}
+
 
 .visual {
     background-color: lime;
     height: 120px;
 }
 
-.member {
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-    text-align: right;
-}
 
 .main {
     background-color: skyblue;
