@@ -274,7 +274,13 @@ opacity: 1;
 
 .group1 {
     width: 250px;
-    background-color: purple;
+    background-color: 
+    linear-gradient(to bottom,
+    #e8852e 0%,
+    #ed552f 35%,
+    #ed552f 70%,
+    #e8852e 100%);
+    
 }
 
 .group2 {
