@@ -26,6 +26,7 @@ html {
     font-size: 10px;
 }
 
+
 body {
     font-family: 'Spoqa Han Sans', 'Sans-serif';
     font-size: 1.4rem;
@@ -362,7 +363,6 @@ a {
     border-radius: 3px;
     background: #ed552f 70%;
     color: #fff;
-
 }
 
 .login-member {
@@ -386,7 +386,7 @@ a {
 }
 
 .login-member .icon-right-open{
-    color:#ed552f 70%;
+    color:#ed552f;
 }
 
 .login-member a{
@@ -424,10 +424,120 @@ a {
 
 /* 웹 관련 용어 */
 
-.section{
-    background: red;
+.term {
+  border: 1px solid #aaa;
+  background: linear-gradient(#ccc, #eee);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.term-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.term-list {
+  margin: 15px 0 0 0;
+}
+.term-list > div {
+  overflow: hidden;
+}
+.term-list div:nth-child(even) {
+  margin-top: 15px;
+}
+.term-list-subject,
+.term-list-brief {
+  float: right;
+  width: 145px;
+}
+.term-list-subject {
+  color: #296897;
+}
+.term-list-thumbnail {
+  float: left;
+}
+.term-list-thumbnail img {
+  display: block;
+}
+.term-list-brief1 {
+    margin: 5px 0 35px 0;
+    line-height: 1.5;
+  }
+.term-list-brief {
+  margin-top: 5px;
+  line-height: 1.5;
+}
+.term-list dd {
+  margin-left: 0;
 }
 
+.term-list div:nth-child(even) .term-list-subject,
+.term-list div:nth-child(even) .term-list-brief {
+  float: left;
+}
+.term-list div:nth-child(even) .term-list-thumbnail {
+  float: right;
+}
+
+/* 검색 폼 */
+.search-form{
+    background-color: yellow;
+    background: #ccc linear-gradient(#ccc,#eee);
+    border:1px solid #aaa;
+    border-bottom-color: #fff;
+    border-radius: 15px 15px 0 0 ;
+}
+.search-form fieldset{
+    border:0;
+    margin: 0;
+    padding: 0;
+    
+}
+.search-form-container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px 10px;
+}
+.btn-search{
+    
+}
+.search-form [name="search"]{
+    
+    border:1px solid #aaa;
+    border-radius: 3px;
+    padding: 1px 1px 1px 0.3em;
+    height: 22px;
+    width: 190px;
+    /* margin:0.5px; */
+}
+.search-form button{
+    background-color: #333;
+    border: 1px solid #aaa;
+    color: #fff;
+    border-radius: 3px;
+    height: 22px;
+    padding: 0 10px;
+}
+
+/* fieldset{
+    border-radius: 15px 15px 0 0;
+    padding: 15px 25px 10px;
+    background: #eee;
+    justify-content: center;
+    
+}
+
+.icon-search{
+
+}
+.btn-search{
+    background: #333;
+    color:#fff;
+    border: 1px solid #aaa;
+} */
 
 
 
