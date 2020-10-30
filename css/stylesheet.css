@@ -1025,7 +1025,7 @@ a {
 .guide-list li{
     float: left;
     margin:0 5px;
-    
+    text-transform: uppercase;
 }
 .guide-list a{
     display: block;
